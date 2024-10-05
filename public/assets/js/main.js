@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    
+
     // JS Index
     //--------------------------------------------------
     // 1. sticky menu
@@ -60,7 +60,7 @@
     $(window).load(function(){
         $('#preloader').fadeOut('slow',function(){$(this).remove();});
     });
-    
+
 
 
     // 6. One Page Nav
@@ -112,7 +112,7 @@
     });
 
 
-    
+
     // 9. brand active
    //---------------------------------------------------------------------------
     $('.brand-active').slick({
@@ -210,58 +210,58 @@
      if (typeof ($.fn.knob) != 'undefined') {
 
         $('.knob').each(function () {
-    
+
           var $this = $(this),
-    
+
             knobVal = $this.attr('data-rel');
-    
-    
-    
+
+
+
           $this.knob({
-    
+
             'draw': function () {
-    
+
               $(this.i).val(this.cv + '%');
-    
+
             }
-    
+
           });
-    
-    
+
+
           $this.appear(function () {
-    
+
             $({
-    
+
               value: 0
-    
+
             }).animate({
-    
+
               value: knobVal
-    
+
             }, {
-    
+
               duration: 2000,
-    
+
               easing: 'swing',
-    
+
               step: function () {
-    
+
                 $this.val(Math.ceil(this.value)).trigger('change');
-    
+
               }
-    
+
             });
-    
+
           }, {
-    
+
             accX: 0,
-    
+
             accY: -150
-    
+
           });
-    
+
         });
-    
+
     }
 
 
@@ -334,14 +334,21 @@
 
     $('#scroll').on('click', function(event) {
         event.preventDefault();
-        
+
         $('html, body').animate({
             scrollTop: 0,
         }, 1500);
     });
 
 
+    const sections = document.querySelectorAll('section');
+    sections.forEach((section, index) => {
+      if (index % 2 === 0) {
+        section.style.backgroundColor = '#0f0715'; // Azul para seções ímpares (index 0, 2, 4...)
+      } else {
+        section.style.backgroundColor = '#140c1c'; // Verde para seções pares (index 1, 3, 5...)
+      }
+    });
 
-  
 
-})(jQuery);	  
+})(jQuery);
