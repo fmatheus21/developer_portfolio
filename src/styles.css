@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('../public/assets/css/bootstrap.min.css');
+@import url('../public/assets/css/fontawesome-all.min.css');
+@import url('../public/assets/css/flaticon.css');
+@import url('../public/assets/css/animate.css');
+@import url('../public/assets/css/aos.css');
+@import url('../public/assets/css/jquery.fancybox.min.css');
+@import url('../public/assets/css/slick.css');
+@import url('../public/assets/css/leaflet.css');
+@import url('../public/assets/css/meanmenu.css');
+@import url('../public/assets/css/default.css');
+@import url('../public/assets/css/style.css');
+@import url('../public/assets/css/responsive.css');
