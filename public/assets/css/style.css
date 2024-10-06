@@ -35,6 +35,11 @@
   src: url(../fonts/jost-medium-font/jost-medium.ttf);
 }
 
+@font-face {
+  font-family: 'montserrat-medium-font';
+  src: url(../fonts/montserrat/Montserrat-Medium.ttf);
+}
+
 /* common css */
 :root {
   --primary-color: #80db66;
@@ -45,14 +50,16 @@
   --secondary-background: #140c1c;
   --tertiary-background: #080213;
   --primary-text-color: #f9f9fa;
+  --secondary-text-color: #212228;
   --text-color: #b0aac0;
   --meta-text-color: #9b9db1;
   --section-bg: #212228;
   --main-border: #474747;
+  --font-fontawesome: 'Font Awesome 5 Pro';
+  --font-medium: 500;
 }
 body {
-  font-family: 'jost-medium-font';
-  font-weight: 400;
+  font-family: 'montserrat-medium-font';
 }
 .body-dark-mode {
   background: var(--secondary-color);
@@ -100,7 +107,7 @@ h6 {
   font-size: 21px;
 }
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'montserrat-medium-font', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.67;
@@ -832,6 +839,24 @@ span#main {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
+.port-content-service {
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--primary-color);
+  min-height: 270px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.port-content-service .service-text {
+  text-align: left;
+}
+.port-content-service .service-text p,
+.port-content-service .service-text h3 {
+  color: var(--primary-text-color);
+}
 .port-content:hover {
   background: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -1117,12 +1142,21 @@ span#main {
   margin: 0 auto;
 }
 .modal-content {
-  background-color: var(--primary-color);
+  background-color: var(--primary-text-color);
+  padding-bottom: 30px;
 }
-.modal-content h2 {
+.modal-content h2,
+.modal-content h3 {
   font-size: 36px;
   padding: 50px 0px 20px 0px;
   line-height: 1.32;
+  color: var(--primary-color);
+}
+.modal-content strong {
+  color: var(--primary-color);
+}
+.modal-content p {
+  color: var(--secondary-text-color);
 }
 .pro-modal-footer h6 {
   font-size: 16px;
@@ -1251,7 +1285,7 @@ span#main {
 }
 .close-icon span {
   font-size: 18px;
-  color: var(--primary-color);
+  color: var(--primary-text-color);
   background: var(--primary-color);
   width: 36px;
   height: 36px;
@@ -1267,10 +1301,10 @@ span#main {
 }
 .close-icon span:hover {
   box-shadow: 0px 6px 30px 0px rgba(7, 7, 7, 0.12);
+  background: var(--tertiary-color);
 }
 .modal-content .close-icon span:hover {
-  box-shadow: none;
-  background: var(--primary-color);
+  background: var(--tertiary-color);
 }
 .mobile-menubar {
   font-size: 20px;
@@ -1386,4 +1420,17 @@ a.btn-primary:hover,
 
 .meta-text-color {
   color: var(--primary-color);
+}
+
+.service-ser-icon {
+  color: var(--secondary-color);
+  font-size: 80px;
+}
+
+.desc ul li:before {
+  content: '\f00c';
+  font-family: var(--font-fontawesome);
+  font-weight: var(--font-medium);
+  color: var(--tertiary-color);
+  padding-right: 10px;
 }
