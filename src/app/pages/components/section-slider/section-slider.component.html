@@ -1,33 +1,27 @@
-<!-- ====== slider-area-start
-  ==================================================== -->
 <section id="home" class="slider-area slider-bg-color over-hidden">
-  <!--<div
-      class="single-slider slider-height over-hidden position-relative xxl-device-width bg-cover no-repeat"
-      data-background="./assets/images/slider/slider-bg.jpg">-->
   <div class="single-slider slider-height over-hidden position-relative xxl-device-width bg-cover no-repeat">
     <div id="scene" class="parallax position-absolute w-100 h-100 z-index1">
       <img
         data-depth="0.20"
         class="hero-shape hero-shape1 position-absolute d-none d-lg-inline-block"
         src="./assets/images/shape/shape1.png"
-        alt="#" /><!-- /hero-shape1 -->
+        alt="#" />
       <img
         data-depth="0.15"
         class="hero-shape hero-shape2 position-absolute d-none d-lg-inline-block"
         src="./assets/images/shape/shape2.png"
-        alt="#" /><!-- /hero-shape2 -->
+        alt="#" />
       <img
         data-depth="0.30"
         class="hero-shape hero-shape3 position-absolute d-none d-lg-inline-block"
         src="./assets/images/shape/shape3.png"
-        alt="#" /><!-- /hero-shape3 -->
+        alt="#" />
       <img
         data-depth="0.10"
         class="hero-shape hero-shape4 position-absolute d-none d-lg-inline-block"
         src="./assets/images/shape/shape4.png"
-        alt="#" /><!-- /hero-shape4 -->
+        alt="#" />
     </div>
-    <!-- /parallax -->
 
     <div class="container slider-height d-flex align-items-end">
       <div class="row justify-content-center align-items-center h-100">
@@ -39,64 +33,46 @@
               data-aos-duration="2200"
               data-aos-delay="1000">
               <h1 class="mb-15 white-text slider-area-name">
-                <span class="sub-heading d-block text-uppercase theme-color mb-0">Hello I’m</span>
-                James Smith
+                <span class="sub-heading d-block text-uppercase theme-color mb-0">{{ accost }}</span>
+                {{ name }}
               </h1>
               <h2 class="text-capitalize white-text mb-40">
-                A Passionate
                 <span class="d-text d-block d-sm-inline-block">
                   <span
                     class="typer theme-color d-inline-block pl-2 area-theme-color"
                     id="main"
-                    data-words="Software Engineer, Web Designer, Freelancer"
+                    [attr.data-words]="profession"
                     data-delay="100"
                     data-colors="#ffffff"></span
                   ><span class="cursor theme-color d-inline-block" data-owner="main"></span>
                 </span>
               </h2>
               <a
-                href="#hero-btn"
+                [href]="cv"
+                download
                 class="btn-primary btn position-relative over-hidden theme-bg text-uppercase transition5"
-                >Say Hello</a
+                >Download CV</a
               >
             </div>
-            <!-- /slider-content -->
           </div>
-          <!-- /slider-wrapper -->
         </div>
-        <!-- /col -->
 
         <div class="col-xl-7 col-lg-6 col-md-7 col-sm-10 col-12 d-flex justify-content-center align-items-end h-100">
           <div class="slider-img pl-120 position-relative z-index1">
-            <img src="./assets/images/slider/person.png" alt="hero image" />
+            <img [src]="image" alt="image" />
           </div>
-          <!-- /slider-img -->
         </div>
-        <!-- /col -->
       </div>
-      <!-- /row -->
     </div>
-    <!-- /container -->
 
     <div class="slider-social-link position-absolute right-0 d-none d-md-block z-index11">
       <ul class="social pr-60">
-        <li class="mt-10 mb-10 rotate-hover">
-          <a class="text-center d-inline-block rotate" href="#"><i class="fab fa-facebook-f"></i></a>
-        </li>
-        <li class="mt-10 mb-10 rotate-hover">
-          <a class="text-center d-inline-block rotate" href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li class="mt-10 mb-10 rotate-hover">
-          <a class="text-center d-inline-block rotate" href="#"><i class="fab fa-linkedin-in"></i></a>
-        </li>
-        <li class="mt-10 mb-10 rotate-hover">
-          <a class="text-center d-inline-block rotate" href="#"><i class="fab fa-youtube"></i></a>
+        <li *ngFor="let media of socialMedia" class="mt-10 mb-10 rotate-hover">
+          <a [href]="media.url" target="_blank" class="text-center d-inline-block rotate"
+            ><i [class]="media.icon"></i
+          ></a>
         </li>
       </ul>
-      <!-- social -->
     </div>
-    <!-- /slider-social-link -->
   </div>
-  <!-- /single-slider -->
 </section>
-<!-- slider-area-end  -->

@@ -16,11 +16,6 @@ export class AppComponent implements OnInit {
 
   private loadScripts() {
     this.scriptService
-      .loadExternalScript('./assets/js/typer.js')
-      .then(() => {})
-      .catch(() => {});
-
-    this.scriptService
       .loadExternalScript('./assets/js/main.js')
       .then(() => {})
       .catch(() => {});
