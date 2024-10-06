@@ -13,6 +13,7 @@ import { ScriptService } from '../../../../script.service';
 export class SectionSliderComponent implements OnInit {
   personal: any[] = [];
   socialMedia: any[] = [];
+  shapes: any[] = [];
   name: string = 'name';
   accost: string = 'accost';
   profession: string = 'developer';
@@ -47,6 +48,7 @@ export class SectionSliderComponent implements OnInit {
         next: (data: any) => {
           this.personal = data['presentation'][0]['personal'];
           this.socialMedia = data['presentation'][0]['personal'][0]['socialMedia'];
+          this.shapes = data['presentation'][0]['personal'][0]['shape'];
           this.name = this.personal[0].name;
           this.accost = this.personal[0].accost;
           this.profession = this.personal[0].profession;

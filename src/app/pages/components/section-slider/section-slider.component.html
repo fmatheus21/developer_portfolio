@@ -2,24 +2,11 @@
   <div class="single-slider slider-height over-hidden position-relative xxl-device-width bg-cover no-repeat">
     <div id="scene" class="parallax position-absolute w-100 h-100 z-index1">
       <img
-        data-depth="0.20"
-        class="hero-shape hero-shape1 position-absolute d-none d-lg-inline-block"
-        src="./assets/images/shape/shape1.png"
-        alt="#" />
-      <img
-        data-depth="0.15"
-        class="hero-shape hero-shape2 position-absolute d-none d-lg-inline-block"
-        src="./assets/images/shape/shape2.png"
-        alt="#" />
-      <img
-        data-depth="0.30"
-        class="hero-shape hero-shape3 position-absolute d-none d-lg-inline-block"
-        src="./assets/images/shape/shape3.png"
-        alt="#" />
-      <img
-        data-depth="0.10"
-        class="hero-shape hero-shape4 position-absolute d-none d-lg-inline-block"
-        src="./assets/images/shape/shape4.png"
+        *ngFor="let shape of shapes"
+        [attr.data-depth]="shape.depth"
+        [ngClass]="shape.class"
+        class="hero-shape position-absolute d-none d-lg-inline-block"
+        [src]="shape.image"
         alt="#" />
     </div>
 
