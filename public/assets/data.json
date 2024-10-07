@@ -14,16 +14,15 @@
             { "icon": "fab fa-linkedin-in", "url": "https://www.linkedin.com/in/fmatheus" }
           ],
           "shape": [
-            { "image": "./assets/images/personal/shape1.png", "depth": "0.20", "class": "hero-shape1" },
-            { "image": "./assets/images/personal/shape2.png", "depth": "0.15", "class": "hero-shape2" },
-            { "image": "./assets/images/personal/shape3.png", "depth": "0.30", "class": "hero-shape3" },
-            { "image": "./assets/images/personal/shape4.png", "depth": "0.10", "class": "hero-shape4" }
+            { "image": "./assets/images/shape/shape1.png", "depth": "0.20", "class": "hero-shape1" },
+            { "image": "./assets/images/shape/shape2.png", "depth": "0.15", "class": "hero-shape2" },
+            { "image": "./assets/images/shape/shape3.png", "depth": "0.30", "class": "hero-shape3" },
+            { "image": "./assets/images/shape/shape4.png", "depth": "0.10", "class": "hero-shape4" }
           ]
         }
       ]
     }
   ],
-
   "services": [
     {
       "icon": "far fa-desktop",
@@ -57,5 +56,17 @@
       "process": "<div><p>O processo de desenvolvimento mobile envolve várias etapas, que podem ser resumidas da seguinte forma:</p><ol><li><p><strong>Planejamento e Pesquisa</strong>: O processo começa com a definição dos objetivos do aplicativo, o público-alvo, os recursos necessários e a escolha da plataforma (iOS, Android ou ambas). Essa fase também inclui a pesquisa de mercado e análise de concorrentes.</p></li><li><p><strong>Definição de Requisitos</strong>: Nesta etapa, os requisitos técnicos e funcionais são definidos com base nas necessidades dos usuários e nas funcionalidades desejadas. Isso inclui a escolha entre aplicativos nativos, híbridos ou web apps, além da definição de APIs necessárias para integrar com o back-end.</p></li><li><p><strong>Wireframing e Design de Interface (UI/UX)</strong>: Um protótipo ou wireframe é criado para visualizar o layout do aplicativo e a experiência do usuário (UX). Designers criam a interface gráfica (UI), com foco na aparência, acessibilidade e navegação intuitiva.</p></li><li><p><strong>Desenvolvimento</strong>: O processo de codificação começa. Se for nativo, a equipe pode usar <strong>Swift</strong> para iOS e <strong>Kotlin</strong> para Android. No caso de apps híbridos, frameworks como <strong>React Native</strong> ou <strong>Flutter</strong> são utilizados. A equipe de front-end e back-end trabalha em conjunto para garantir que a interface do usuário e as funcionalidades do servidor sejam bem integradas.</p></li><li><p><strong>Teste e Qualidade</strong>: Depois que o aplicativo é desenvolvido, ele passa por testes rigorosos, incluindo testes de funcionalidade, performance, segurança, e testes de compatibilidade em diferentes dispositivos e sistemas operacionais.</p></li><li><p><strong>Lançamento e Publicação</strong>: Após a fase de testes, o aplicativo é enviado para as lojas (Google Play e Apple App Store) ou distribuído de outras formas. É necessário seguir as diretrizes das lojas e realizar os ajustes necessários com base nas políticas de cada plataforma.</p></li><li><p><strong>Manutenção e Atualizações</strong>: Após o lançamento, o desenvolvimento mobile continua com correções de bugs, atualizações de segurança e novos recursos para melhorar a experiência do usuário e manter o aplicativo competitivo.</p></li></ol><p>Esse processo é iterativo, com feedback constante dos usuários e a necessidade de ajustes contínuos conforme novas tecnologias e demandas surgem.</p></div>",
       "image": "./assets/images/services/mobile.png"
     }
-  ]
+  ],
+  "about": {
+    "name": "Fernando Matheus",
+    "year": "1982",
+    "occupation": "Eng. de Software",
+    "phone": "+55 21 98196-4019",
+    "email": "info@fmatheus.com.br",
+    "nationality": " Brasil",
+    "description": "Sou um Engenheiro de Software com experiência em desenvolvimento de sistemas complexos, tanto em back-end quanto em front-end. Minha atuação abrange o ciclo completo de desenvolvimento, desde a análise de requisitos, arquitetura de sistemas, até a implementação e testes.",
+    "signature": "./assets/images/about/signature.png",
+    "image": "./assets/images/about/about-img.jpg",
+    "cv": "./assets/files/cv.pdf"
+  }
 }
