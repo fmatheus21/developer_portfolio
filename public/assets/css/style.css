@@ -805,6 +805,7 @@ span#main {
   padding-bottom: 38px;
 }
 .port-img {
+  width: 70%;
   opacity: 0;
   visibility: hidden;
   margin-top: -12px;
@@ -1134,7 +1135,7 @@ span#main {
   border-bottom-right-radius: 12px;
 }
 .blog-modal-img img {
-  border-radius: 30px;
+  border-radius: 0px;
 }
 /* modal */
 .modal-dialog {
@@ -1433,4 +1434,26 @@ a.btn-primary:hover,
   font-weight: var(--font-medium);
   color: var(--tertiary-color);
   padding-right: 10px;
+}
+
+h4.modal-title {
+  padding-top: 50px;
+  color: var(--primary-color);
+}
+
+.centered-component {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .blog-modal-img img {
+    border-radius: 0px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-modal-img img {
+    border-radius: 0px !important;
+  }
 }

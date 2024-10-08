@@ -1,0 +1,48 @@
+/* Estilos para tornar a imagem do notebook e o conteúdo responsivos */
+
+/* Container responsivo para o notebook */
+.notebook-container {
+  position: relative;
+  width: 50vw; /* Use 80% da largura da viewport */
+  max-width: 1200px; /* Limite máximo de largura */
+  height: auto; /* Mantém a proporção da altura */
+  margin: 0 auto; /* Centraliza na tela */
+}
+
+/* Imagem do notebook responsiva */
+.notebook-image {
+  width: 100%; /* O notebook ocupa 100% do container */
+  height: auto; /* Mantém a proporção */
+  z-index: 2; /* Fica à frente */
+}
+
+/* Container da tela do notebook */
+.screen-content {
+  position: absolute;
+  top: 7%;
+  left: 5.5%;
+  width: 89%;
+  height: 61%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1;
+  border-radius: 0px;
+}
+
+/* Imagem do print do site responsiva */
+.scrollable-content {
+  width: 100%;
+  height: auto; /* A altura se ajusta automaticamente para manter a proporção */
+}
+
+/* Para garantir que a tela seja responsiva em dispositivos menores */
+@media (max-width: 768px) {
+  .notebook-container {
+    width: 95vw; /* O notebook ocupa quase toda a largura em telas menores */
+  }
+
+  .screen-content {
+    /*width: 84%;
+    height: 70%;*/
+  }
+}
