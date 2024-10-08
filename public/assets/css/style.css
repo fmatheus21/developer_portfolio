@@ -1446,6 +1446,10 @@ h4.modal-title {
   margin-top: 50px;
 }
 
+.portfolio-grid .grid-item {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
   .blog-modal-img img {
     border-radius: 0px !important;
