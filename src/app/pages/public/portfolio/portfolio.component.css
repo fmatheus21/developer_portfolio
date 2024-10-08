@@ -1,0 +1,99 @@
+:root {
+  --primary-color: #80db66;
+  --primary-color: #8750f7;
+  --secondary-color: #2a1454;
+  --tertiary-color: #dd00ac;
+  --primary-background: #0f0715;
+  --secondary-background: #140c1c;
+  --tertiary-background: #080213;
+  --primary-text-color: #f9f9fa;
+  --secondary-text-color: #212228;
+  --text-color: #b0aac0;
+  --meta-text-color: #9b9db1;
+  --section-bg: #212228;
+  --main-border: #474747;
+  --font-fontawesome: 'Font Awesome 5 Pro';
+  --font-medium: 500;
+}
+
+#work {
+  background: var(--secondary-background) !important;
+}
+
+.portfolio-area .portfolio-menu button {
+  border: 0;
+  background: transparent;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px 18px;
+  color: #2e2e37;
+  cursor: pointer;
+}
+.portfolio-menu button.active,
+.portfolio-menu button:hover {
+  color: var(--primary-color);
+}
+.single-portfolio img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.single-portfolio::before {
+  content: '';
+  background: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.single-portfolio:hover::before {
+  opacity: 0.7;
+}
+.port-content {
+  right: 30px;
+  top: -10px;
+  font-size: 18px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 11;
+  cursor: pointer;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+}
+.single-portfolio:hover .port-content {
+  top: 30px;
+  transition: 0.6s;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0;
+  -moz-transition: 0;
+  -ms-transition: 0;
+  -o-transition: 0;
+}
+.port-over-content {
+  bottom: -30px;
+  opacity: 0;
+  transition: 0.6s;
+}
+.single-portfolio:hover .port-over-content {
+  bottom: 0%;
+  opacity: 1;
+  transition: 0.6s;
+}
+.port-over-content h5 {
+  font-size: 22px;
+  line-height: 1.3;
+}

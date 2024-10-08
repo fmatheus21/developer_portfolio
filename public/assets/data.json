@@ -89,6 +89,21 @@
           "benefits": "<ul><li><strong>Facilidade de Uso</strong>: Mesmo sem conhecimentos técnicos avançados, é possível gerenciar e atualizar o conteúdo.</li><li><strong>Personalização</strong>: Temas e plugins ajudam a criar sites únicos e escaláveis, adaptados a diferentes nichos.</li><li><strong>SEO Amigável</strong>: Ferramentas e plugins facilitam a otimização para mecanismos de busca.</li><li><strong>Comunidade e Suporte</strong>: Uma grande comunidade global oferece suporte contínuo, documentações e atualizações regulares.</li></ul>"
         },
         {
+          "title": "Gigasite",
+          "subtitle": "A agência de marketing digital.",
+          "about": "GIGASITE é uma agência de marketing digital focada em resultados. Somos especialistas em Criação de Website’s e E-commerce’s.",
+          "image": "./assets/images/portfolio/gigasite/macbook/screen.png",
+          "thumbnail": "./assets/images/portfolio/gigasite/thumbnail.png",
+          "url": "https://www.gigasite.com.br",
+          "filter": "wordpress",
+          "notebook": "./assets/images/portfolio/imac.png",
+          "category": "Tecnologia",
+          "technology": "Wordpress",
+          "year": 2018,
+          "description": "Este site foi desenvolvido em Wordpress utilizando o tema SeoCrawler. <br/> WordPress é uma plataforma de gerenciamento de conteúdo (CMS) amplamente utilizada para o desenvolvimento de sites, desde blogs pessoais até sites empresariais e lojas virtuais. Sua flexibilidade permite criar projetos customizados com uma vasta gama de temas e plugins, possibilitando a adição de funcionalidades sem necessidade de programação complexa.",
+          "benefits": "<ul><li><strong>Facilidade de Uso</strong>: Mesmo sem conhecimentos técnicos avançados, é possível gerenciar e atualizar o conteúdo.</li><li><strong>Personalização</strong>: Temas e plugins ajudam a criar sites únicos e escaláveis, adaptados a diferentes nichos.</li><li><strong>SEO Amigável</strong>: Ferramentas e plugins facilitam a otimização para mecanismos de busca.</li><li><strong>Comunidade e Suporte</strong>: Uma grande comunidade global oferece suporte contínuo, documentações e atualizações regulares.</li></ul>"
+        },
+        {
           "title": "Aliança",
           "subtitle": "Aliança Associação de Benefícios",
           "about": "A Aliança é uma Associação de Proteção Veicular, que tem por objetivo proporcionar aos seus associados segurança e tranquilidade ao utilizar o seu patrimônio, somando esforços para garantir uma excelente assistência e sempre buscando as melhores parcerias e serviços.",
