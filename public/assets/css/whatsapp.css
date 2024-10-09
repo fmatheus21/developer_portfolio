@@ -1,0 +1,18 @@
+.fdnwsh {
+  position: fixed;
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+  bottom: 4.5rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  -moz-box-align: end;
+  align-items: end;
+  z-index: 11;
+  gap: 1rem;
+}
+
+.cxkuqi {
+  width: initial;
+  height: 84px;
+}

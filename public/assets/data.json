@@ -417,5 +417,13 @@
   "socialMedia": [
     { "icon": "fab fa-github", "url": "https://github.com/fmatheus21", "class": "github-bg" },
     { "icon": "fab fa-linkedin-in", "url": "https://www.linkedin.com/in/fmatheus", "class": "linkedin-bg" }
+  ],
+  "skills": [
+    { "technology": "Java", "percentage": 90 },
+    { "technology": "Angular", "percentage": 80 },
+    { "technology": "React JS", "percentage": 60 },
+    { "technology": "React Native", "percentage": 60 },
+    { "technology": "JavaScript", "percentage": 70 },
+    { "technology": "CSS", "percentage": 70 }
   ]
 }

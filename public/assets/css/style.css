@@ -258,7 +258,7 @@ a:hover,
   letter-spacing: 7px;
 }
 .title h2 {
-  font-size: 60px;
+  font-size: 50px;
 }
 /* marquee css start */
 .marquee {
@@ -896,8 +896,11 @@ span#main {
 }
 .experience-content li:hover .experience-ser-icon span,
 .education-content li:hover .experience-ser-icon span {
-  background: var(--primary-color);
-  color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+.experience-content li:hover .experience-ser-icon,
+.education-content li:hover .experience-ser-icon {
+  border-color: var(--tertiary-color);
 }
 .experience-ser-icon span {
   width: 70px;
