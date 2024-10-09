@@ -410,23 +410,12 @@
           "year": 2020,
           "description": "Este site foi desenvolvido em Angular. <br/> Angular é uma plataforma de desenvolvimento de front-end robusta e amplamente utilizada para a criação de aplicações web dinâmicas e responsivas. Mantida pelo Google, Angular oferece uma arquitetura baseada em componentes, o que facilita a manutenção, escalabilidade e a reutilização de código em grandes projetos.",
           "benefits": "<ul><li><strong>Desenvolvimento Rápido</strong>: Com funcionalidades integradas como o CLI (Command Line Interface), Angular facilita a criação, execução e otimização de projetos.</li><li><strong>Arquitetura Modular</strong>: Componentes e módulos reutilizáveis permitem que desenvolvedores construam interfaces de usuário complexas de maneira organizada.</li><li><strong>Ecossistema Moderno</strong>: Recursos como o gerenciamento de estados, manipulação de APIs via HTTP e o suporte a Reactive Forms otimizam o desenvolvimento de aplicações ricas e interativas.</li><li><strong>Desempenho</strong>: Angular oferece otimizações automáticas, como a divisão de código para melhor carregamento e desempenho.</li><li><strong>Suporte a SSR e SSG</strong>: Para SEO e performance, oferece Server-Side Rendering (SSR) e Static Site Generation (SSG), melhorando a experiência de uso.</li></ul>"
-        },
-        {
-          "title": "Câmara Municipal de São José do Belmonte ",
-          "subtitle": "Câmara Municipal de São José do Belmonte ",
-          "about": "O restaurante Tropicalize tem em sua essência a culinária brasileira com receitas próprias, com sabores diversos e ainda, dentro do cardápio utilizamos receitas da culinária Nordestina e Mineira, dentre outras..",
-          "image": "./assets/images/portfolio/saojosedobelmonte/macbook/screen.png",
-          "thumbnail": "./assets/images/portfolio/saojosedobelmonte/thumbnail.png",
-          "url": "https://terapiaholisticadomarmorto.com.br",
-          "filter": "angular",
-          "notebook": "./assets/images/portfolio/imac.png",
-          "category": "Alimentação",
-          "technology": "Angular",
-          "year": 2020,
-          "description": "Este site foi desenvolvido em Angular. <br/> Angular é uma plataforma de desenvolvimento de front-end robusta e amplamente utilizada para a criação de aplicações web dinâmicas e responsivas. Mantida pelo Google, Angular oferece uma arquitetura baseada em componentes, o que facilita a manutenção, escalabilidade e a reutilização de código em grandes projetos.",
-          "benefits": "<ul><li><strong>Desenvolvimento Rápido</strong>: Com funcionalidades integradas como o CLI (Command Line Interface), Angular facilita a criação, execução e otimização de projetos.</li><li><strong>Arquitetura Modular</strong>: Componentes e módulos reutilizáveis permitem que desenvolvedores construam interfaces de usuário complexas de maneira organizada.</li><li><strong>Ecossistema Moderno</strong>: Recursos como o gerenciamento de estados, manipulação de APIs via HTTP e o suporte a Reactive Forms otimizam o desenvolvimento de aplicações ricas e interativas.</li><li><strong>Desempenho</strong>: Angular oferece otimizações automáticas, como a divisão de código para melhor carregamento e desempenho.</li><li><strong>Suporte a SSR e SSG</strong>: Para SEO e performance, oferece Server-Side Rendering (SSR) e Static Site Generation (SSG), melhorando a experiência de uso.</li></ul>"
         }
       ]
     }
+  ],
+  "socialMedia": [
+    { "icon": "fab fa-github", "url": "https://github.com/fmatheus21", "class": "github-bg" },
+    { "icon": "fab fa-linkedin-in", "url": "https://www.linkedin.com/in/fmatheus", "class": "linkedin-bg" }
   ]
 }

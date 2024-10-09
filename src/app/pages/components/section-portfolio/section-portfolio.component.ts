@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../../../core/service/app.service';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-section-portfolio',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './section-portfolio.component.html',
   styleUrl: './section-portfolio.component.css',
 })

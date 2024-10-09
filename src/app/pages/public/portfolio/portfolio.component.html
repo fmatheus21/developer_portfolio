@@ -10,16 +10,6 @@
         </div>
       </div>
 
-      <!--<div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
-          <div class="port-button mb-50 portfolio-menu">
-            <button *ngFor="let filter of filters" [attr.data-filter]="filter.filter">
-              {{ filter.name }}
-            </button>
-          </div>
-        </div>
-      </div>-->
-
       <div class="row portfolio-grid">
         <div
           (click)="openModal(project)"
@@ -86,7 +76,7 @@
                           Ano :<span class="pl-2 openS-font-family">{{ selectedProject?.year }}</span>
                         </li>
                         <li>
-                          Task : <span class="pl-2 openS-font-family">{{ selectedProject?.technology }}</span>
+                          Tecnologia : <span class="pl-2 openS-font-family">{{ selectedProject?.technology }}</span>
                         </li>
                       </ul>
                       <a

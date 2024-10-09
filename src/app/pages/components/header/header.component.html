@@ -1,5 +1,3 @@
-<!--  ====== header-area-start
-============================================================ -->
 <header>
   <div id="header-sticky" class="transparent-header header-area">
     <div class="header">
@@ -16,55 +14,42 @@
               <nav id="mobile-menu">
                 <ul class="d-block">
                   <li>
-                    <a class="active" href="#home">Home</a>
+                    <a class="active" href="#home">Início</a>
                   </li>
                   <li>
-                    <a href="#about">About</a>
+                    <a href="#about">Sobre</a>
                   </li>
                   <li>
-                    <a href="#work">Works</a>
+                    <a href="#work">Portfólio</a>
                   </li>
                   <li>
-                    <a href="#service">service</a>
+                    <a href="#service">Serviços</a>
                   </li>
                   <li>
-                    <a href="#contact">Contact</a>
-                  </li>
-                  <li>
-                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contato</a>
                   </li>
                 </ul>
               </nav>
             </div>
-            <!-- /main-menu -->
+
             <div class="header-btn pl-45">
               <a
-                href="#"
+                [href]="cv"
                 download
                 class="btn-primary btn position-relative over-hidden theme-bg text-uppercase transition5"
                 >download cv</a
               >
             </div>
-            <!-- /header-btn -->
             <div class="mobile-m-bar d-block d-lg-none ml-30">
               <a class="mobile-menubar theme-color" href="javascript:void(0);"><i class="far fa-bars"></i></a>
             </div>
           </div>
-          <!-- /col -->
         </div>
-        <!-- /row -->
       </div>
-      <!-- /container -->
     </div>
   </div>
-  <!-- /header-bottom -->
 </header>
-<!--  header-area-end  -->
 
-<!--  ====== header extra info start
-============================================================ -->
-
-<!-- side-mobile-menu start -->
 <div class="side-mobile-menu pt-15 pb-30 pl-30 pr-20 pb-100">
   <div class="d-fle justify-content-between w-100">
     <div class="close-icon d-inline-block float-right clear-both mt-20 mb-15">
@@ -74,31 +59,13 @@
     </div>
   </div>
   <div class="mobile-menu mt-10"></div>
-  <h5 class="text-white text-center mt-35 pb-1 d-inline-block ml-3">Follow me</h5>
+  <h5 class="text-white text-center mt-35 pb-1 d-inline-block ml-3">Redes Sociais</h5>
   <ul class="social social-bg text-center d-flex mt-10 ml-3">
-    <li class="mr-2 rotate-hover">
-      <a class="facebook-bg text-center pr-0 text-white d-block transition-3 rotate" href="#"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
-    </li>
-    <li class="mr-2 rotate-hover">
-      <a class="twitter-bg text-center pr-0 text-white d-block rotate transition-3" href="#"
-        ><i class="fab fa-twitter"></i
-      ></a>
-    </li>
-    <li class="mr-2 rotate-hover">
-      <a class="linkedin-bg text-center pr-0 text-white d-block rotate transition-3" href="#"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-    </li>
-    <li class="mr-2 rotate-hover">
-      <a class="instagram-bg text-center pr-0 text-white d-block rotate transition-3" href="#"
-        ><i class="fab fa-instagram"></i
+    <li *ngFor="let media of socialMedia" class="mr-2 rotate-hover">
+      <a class="text-center pr-0 text-white d-block rotate transition-3" [ngClass]="media.class" [href]="media.url"
+        ><i [class]="media.icon"></i
       ></a>
     </li>
   </ul>
-  <!-- social -->
 </div>
-<!-- /side-mobile-menu -->
 <div class="body-overlay"></div>
-<!-- header extra info end  -->
