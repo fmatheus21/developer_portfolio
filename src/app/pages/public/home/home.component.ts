@@ -14,7 +14,6 @@ import { SectionTestimonialComponent } from '../../components/section-testimonia
 import { SectionBrandComponent } from '../../components/section-brand/section-brand.component';
 import { SectionContactComponent } from '../../components/section-contact/section-contact.component';
 import { SectionBlogComponent } from '../../components/section-blog/section-blog.component';
-import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-home',

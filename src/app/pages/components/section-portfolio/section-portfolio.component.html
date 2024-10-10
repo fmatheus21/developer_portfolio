@@ -39,6 +39,7 @@
                 alt="portfolio image 1" />
               <div
                 (click)="openModal(project)"
+                [attr.aria-hidden]="true"
                 class="port-content text-center transition5 z-index11"
                 data-toggle="modal"
                 data-target="#modal_portfolio">

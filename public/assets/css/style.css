@@ -42,7 +42,6 @@
 
 /* common css */
 :root {
-  --primary-color: #80db66;
   --primary-color: #8750f7;
   --secondary-color: #2a1454;
   --tertiary-color: #dd00ac;
@@ -682,7 +681,7 @@ span#main {
 }
 .intro-feature-text-style {
   font-size: 300px;
-  bottom: -110px;
+  bottom: -100px;
   line-height: 1;
   right: -30px;
   color: #2d2e36;
@@ -790,12 +789,16 @@ span#main {
   line-height: 1.5;
 }
 .fact-style1 {
-  bottom: 86%;
+  bottom: 55%;
   left: 0;
 }
 .fact-style2 {
-  bottom: -75px;
+  bottom: -150px;
   right: -5px;
+}
+.fact-style1 img,
+.fact-style2 img {
+  opacity: 0.1;
 }
 
 /* 7. portfolio area
@@ -1080,8 +1083,8 @@ span#main {
 }
 .contact-info input,
 .contact-info textarea {
-  background: var(--primary-color);
-  border-color: #474747;
+  background: var(--tertiary-background);
+  border-color: var(--primary-color);
   /* border: 0; */
 }
 .contact-info .massage {
@@ -1456,6 +1459,19 @@ h4.modal-title {
 
 .github-bg {
   background: var(--tertiary-background);
+}
+
+.contact-form span {
+  color: var(--primary-color);
+}
+
+.header-logo,
+.foot-logo {
+  width: 100px;
+}
+
+.intro-feature-text p {
+  color: var(--primary-text-color);
 }
 
 @media screen and (max-width: 767px) {

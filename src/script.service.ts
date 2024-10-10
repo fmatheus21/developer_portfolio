@@ -17,7 +17,7 @@ export class ScriptService {
   }
 
   public loadExternalStyles(styleUrl: string) {
-    return new Promise((resolve, reject) => {
+    return new Promise(resolve => {
       const styleElement = document.createElement('link');
       styleElement.href = styleUrl;
       styleElement.onload = resolve;

@@ -301,31 +301,6 @@
 
 
 
-
-
-
-
-    // 15. map js
-    // ---------------------------------------------------------------------------
-    var map = L.map('mapwrapper').setView([-37.817160, 144.955937], 12);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-
-    var greenIcon = L.icon({
-        iconUrl: "images/icon/map-marker.png",
-
-        iconSize:     [78, 78], // size of the icon
-        // shadowUrl: 'my-icon-shadow.png',
-        // shadowSize: [72, 72],
-    });
-
-    L.marker([-37.817160, 144.955937], {icon: greenIcon}).addTo(map);
-
-
-
     // 16. Animate the scroll to top
     // --------------------------------------------------------------------------
     // Show or hide the sticky footer button
