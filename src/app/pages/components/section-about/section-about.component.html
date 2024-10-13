@@ -11,7 +11,12 @@
               data-aos-delay="100">
               <div class="about-img-over pl-50 transition5 d-inline-block position-relative">
                 <div class="position-relative z-index11" data-tilt="" data-tilt-max="10">
-                  <img class="border-radius13 position-relative z-index11" [src]="about?.image" alt="image" />
+                  <img
+                    class="border-radius13 position-relative z-index11"
+                    [src]="about?.image"
+                    width="488"
+                    height="600"
+                    alt="image" />
                 </div>
 
                 <div
@@ -29,11 +34,15 @@
                   <img
                     class="download-bg rotate-animation d-inline-block"
                     src="./assets/images/about/download-bg.png"
+                    width="268"
+                    height="268"
                     alt="image" />
                   <a [href]="about?.cv" target="_blank" class="cv-download-link transition5">
                     <img
                       class="d-icon d-inline-block position-absolute"
                       src="./assets/images/icon/download-icon.png"
+                      width="32"
+                      height="32"
                       alt="image" />
                   </a>
                 </div>
@@ -87,7 +96,7 @@
             </div>
             <div class="about-footer-content d-sm-flex align-items-center mt-lg-2 mt-sm-4 mt-3">
               <div class="signature pt-12 pr-45">
-                <img [src]="about?.signature" alt="signature" />
+                <img [src]="about?.signature" alt="signature" width="456" height="86" />
               </div>
               <div class="about-footer-content-right mt-20 text-left">
                 <h6 class="d-xl-inline-block text-uppercase pr5 mb-0">{{ about?.nameSignature }}</h6>
@@ -103,7 +112,7 @@
     </div>
 
     <div class="about-icon position-absolute d-none d-md-inline-block z-index1 zoom-animation">
-      <img src="./assets/images/shape/content-shape2.png" alt="about shape 2" />
+      <img src="./assets/images/shape/content-shape2.png" width="47" height="44" alt="about shape 2" />
     </div>
   </div>
 </section>

@@ -33,11 +33,17 @@
 @font-face {
   font-family: 'jost-medium-font';
   src: url(../fonts/jost-medium-font/jost-medium.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'montserrat-medium-font';
   src: url(../fonts/montserrat/Montserrat-Medium.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* common css */
@@ -129,7 +135,7 @@ li {
   list-style: none;
 }
 img {
-  max-width: 100%;
+  /*max-width: 100%;*/
   transition: all 0.3s ease-out 0s;
 }
 a,

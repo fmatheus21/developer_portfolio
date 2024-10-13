@@ -8,7 +8,7 @@
           "profession": "Engeneheiro de Software, Web Designer, Desenvolvedor Full Stack, Freelancer",
           "description": "Sou um Engenheiro de Software com experiência em desenvolvimento de sistemas complexos, tanto em back-end quanto em front-end. Minha atuação abrange o ciclo completo de desenvolvimento, desde a análise de requisitos, arquitetura de sistemas, até a implementação e testes.",
           "cv": "./assets/files/cv.pdf",
-          "image": "./assets/images/personal/person.png",
+          "image": "./assets/images/personal/person.webp",
           "socialMedia": [
             { "icon": "fab fa-github", "url": "https://github.com/fmatheus21" },
             { "icon": "fab fa-linkedin-in", "url": "https://www.linkedin.com/in/fmatheus" }
@@ -67,7 +67,7 @@
     "description": "Sou um Engenheiro de Software com experiência em desenvolvimento de sistemas complexos, tanto em back-end quanto em front-end. Minha atuação abrange o ciclo completo de desenvolvimento, desde a análise de requisitos, arquitetura de sistemas, até a implementação e testes.",
     "signature": "./assets/images/about/signature.png",
     "nameSignature": "Fernando B Matheus",
-    "image": "./assets/images/about/about-img.png",
+    "image": "./assets/images/about/about-img.webp",
     "cv": "./assets/files/cv.pdf"
   },
   "protfolio": [
