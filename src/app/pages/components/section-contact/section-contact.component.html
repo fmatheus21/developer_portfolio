@@ -37,7 +37,7 @@
                 <div class="contact-text">
                   <h4 class="mb-2">Telefone/WhatsApp</h4>
                   <p class="mb-0">
-                    <a class="text-color primary-hover d-block">+55 21 98196-4019</a>
+                    <a [href]="linkWhatsapp" target="_blank" class="text-color primary-hover d-block">{{ phone }}</a>
                   </p>
                 </div>
               </li>
@@ -52,7 +52,7 @@
                 <div class="contact-text d-inline-block">
                   <h4 class="mb-2">Email</h4>
                   <p class="mb-0">
-                    <a class="text-color primary-hover d-block">{{ email }}</a>
+                    <a [href]="mailto" class="text-color primary-hover d-block">{{ email }}</a>
                   </p>
                 </div>
               </li>

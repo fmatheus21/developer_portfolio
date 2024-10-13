@@ -19,7 +19,7 @@ export class SectionAboutComponent implements OnInit {
   }
 
   load() {
-    this.appService.findAll().subscribe((data: any) => {
+    this.appService.findAbout().subscribe((data: any) => {
       this.about = data['about'];
       const year = new Date().getFullYear();
       this.age = year - this.about.year + ' anos';

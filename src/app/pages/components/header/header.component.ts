@@ -18,8 +18,8 @@ export class HeaderComponent implements OnInit {
   }
 
   load() {
-    this.appService.findAll().subscribe((data: any) => {
-      this.socialMedia = data['socialMedia'];
+    this.appService.findPresentation().subscribe((data: any) => {
+      this.socialMedia = data['presentation'][0]['socialMedia'];
       this.personal = data['presentation'][0]['personal'];
       this.cv = this.personal[0].cv;
     });

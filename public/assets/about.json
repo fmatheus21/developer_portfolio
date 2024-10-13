@@ -1,0 +1,15 @@
+{
+  "about": {
+    "name": "Fernando Matheus",
+    "year": "1982",
+    "occupation": "Eng. de Software",
+    "phone": "+55 21 98196-4019",
+    "email": "info@fmatheus.com.br",
+    "nationality": " Brasil",
+    "description": "Sou um Engenheiro de Software com experiência em desenvolvimento de sistemas complexos, tanto em back-end quanto em front-end. Minha atuação abrange o ciclo completo de desenvolvimento, desde a análise de requisitos, arquitetura de sistemas, até a implementação e testes.",
+    "signature": "./assets/images/about/signature.png",
+    "nameSignature": "Fernando B Matheus",
+    "image": "./assets/images/about/about-img.png",
+    "cv": "./assets/files/cv.pdf"
+  }
+}

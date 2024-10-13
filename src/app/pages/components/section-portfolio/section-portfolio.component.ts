@@ -26,14 +26,14 @@ export class SectionPortfolioComponent implements OnInit {
   }
 
   load() {
-    this.appService.findAll().subscribe((data: any) => {
+    this.appService.findPortfolio().subscribe((data: any) => {
       this.projects = data['protfolio'][0]['projects'].slice(0, 4);
     });
   }
 
   private loadScripts() {
     this.scriptService
-      .loadExternalScript('./assets/js/portfolio.js')
+      .loadExternalScript('./assets/js/portfolio_section.js')
       .then(() => {})
       .catch(() => {});
   }

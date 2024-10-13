@@ -13,4 +13,24 @@ export class AppService {
   findAll(): Observable<any[]> {
     return this.http.get<any[]>(this.json);
   }
+
+  findAbout(): Observable<any[]> {
+    var about = './assets/about.json';
+    return this.http.get<any[]>(about);
+  }
+
+  findPortfolio(): Observable<any[]> {
+    var portfolio = './assets/portfolio.json';
+    return this.http.get<any[]>(portfolio);
+  }
+
+  findService(): Observable<any[]> {
+    var service = './assets/service.json';
+    return this.http.get<any[]>(service);
+  }
+
+  findPresentation(): Observable<any[]> {
+    var presentation = './assets/presentation.json';
+    return this.http.get<any[]>(presentation);
+  }
 }

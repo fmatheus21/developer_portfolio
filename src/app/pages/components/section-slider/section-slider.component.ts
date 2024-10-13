@@ -44,7 +44,7 @@ export class SectionSliderComponent implements OnInit {
 
   load(): Promise<void> {
     return new Promise<void>((resolve, reject) => {
-      this.appService.findAll().subscribe({
+      this.appService.findPresentation().subscribe({
         next: (data: any) => {
           this.personal = data['presentation'][0]['personal'];
           this.socialMedia = data['presentation'][0]['personal'][0]['socialMedia'];

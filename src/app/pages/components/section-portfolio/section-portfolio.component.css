@@ -17,7 +17,7 @@
 }
 
 /* Container da tela do notebook */
-.screen-content {
+.screen-content-section {
   position: absolute;
   top: 7%;
   left: 5.5%;

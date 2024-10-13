@@ -20,7 +20,7 @@ export class SectionServiceComponent implements OnInit {
   }
 
   load() {
-    this.appService.findAll().subscribe((data: any) => {
+    this.appService.findService().subscribe((data: any) => {
       this.services = data['services'];
     });
   }

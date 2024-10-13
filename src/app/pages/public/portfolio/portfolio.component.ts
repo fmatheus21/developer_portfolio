@@ -26,7 +26,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   load() {
-    this.appService.findAll().subscribe((data: any) => {
+    this.appService.findPortfolio().subscribe((data: any) => {
       this.projects = data['protfolio'][0]['projects'];
       this.filters = data['protfolio'][0]['filters'];
     });
