@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { AppService } from '../../../core/service/app.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ScriptService } from '../../../../script.service';
 
 @Component({
   selector: 'app-section-portfolio',
@@ -15,27 +14,16 @@ export class SectionPortfolioComponent implements OnInit {
   projects: any[] = [];
   selectedProject: any;
 
-  constructor(
-    private appService: AppService,
-    private scriptService: ScriptService
-  ) {}
+  constructor(private appService: AppService) {}
 
   ngOnInit(): void {
     this.load();
-    this.loadScripts();
   }
 
   load() {
     this.appService.findPortfolio().subscribe((data: any) => {
       this.projects = data['protfolio'][0]['projects'].slice(0, 4);
     });
-  }
-
-  private loadScripts() {
-    this.scriptService
-      .loadExternalScript('./assets/js/portfolio_section.js')
-      .then(() => {})
-      .catch(() => {});
   }
 
   openModal(project: any) {
