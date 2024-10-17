@@ -13,14 +13,11 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, {
       useHash: false,
-      scrollPositionRestoration: 'enabled',
-      anchorScrolling: 'enabled',
-      /*useHash: false,
       anchorScrolling: 'enabled',
       onSameUrlNavigation: 'reload',
       enableTracing: false,
       scrollPositionRestoration: 'enabled',
-      scrollOffset: [0, 64],*/
+      scrollOffset: [0, 64],
     }),
   ],
   exports: [RouterModule],
